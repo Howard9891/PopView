@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="com.iyuba.myapplication.MainActivity">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:background="@color/material_red_500"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:id="@+id/rl_topTobottom"
+            android:layout_width="match_parent"
+            android:layout_below="@id/toolBar"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/topTobottom"/>
+        </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@id/rl_topTobottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+
+                android:id="@+id/btn_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dumingyu"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+            <ListView
+                android:id="@+id/lv_list"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    </RelativeLayout>
+
+
